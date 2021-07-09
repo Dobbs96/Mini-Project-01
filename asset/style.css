@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+section {
+  height: 400px;
+}
+
+header.header {
+  background-color: white;
+  height: 34px;
+  border-bottom: turquoise solid 5px;
+  text-align: right;
+  font-size: 30px;
+}
+
+.hyperlink {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.navigation {
+  list-style-type: none;
+  display: inline;
+}
+
+#github,
+#portfolio,
+#contact {
+  background-color: rgb(137, 221, 247);
+}
+
+h1,
+.para1 {
+  text-align: center;
+  margin: 25px 50px 25px 60px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-container {
+  background-color: turquoise;
+  text-align: center;
+}
+
+h2 {
+  margin: 25px 0 25px 0;
+  padding-top: 50px;
+}
+
+#contacts {
+  margin: 100px 0 25px 0;
+  padding-bottom: 25px;
+}
+
+form {
+  border: tomato 5px solid;
+  display: inline;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#submit {
+  border-radius: 35px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+footer {
+  text-align: center;
+  color: green;
+  background-color: black;
+}
