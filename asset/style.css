@@ -1,85 +1,110 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --blue: #b2bbc0;
+  --pie: #dfd8d2;
 }
 
 body {
-  background-color: #dddddd;
+  font-size: 16px;
+  background-color: var(--pie);
 }
 
-section {
-  height: 400px;
-}
-
-header.header {
-  background-color: white;
-  height: 34px;
-  border-bottom: turquoise solid 5px;
-  text-align: right;
-  font-size: 30px;
-}
-
-.hyperlink {
+a {
   text-decoration: none;
-  font-weight: 600;
   color: black;
 }
 
-.navigation {
+.clr {
+  clear: both;
+}
+
+.button {
+  margin-top: 0.5rem;
+  background-color: var(--pie);
+  padding: 0.3rem;
+  border-radius: 1rem;
+}
+.button:hover {
+  background-color: var(--blue);
+}
+
+.head-container {
+  background-color: #bbb;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: #ffdc9b 0.4rem solid;
+}
+
+#main-nav ul li {
+  padding: 0.2rem 0.8rem 0.2rem 0;
   list-style-type: none;
   display: inline;
+  float: right;
+}
+#main-nav ul li:hover {
+  background-color: var(--pie);
 }
 
-#github,
-#portfolio,
+.container {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+
+.container section {
+  padding: 1rem;
+  margin: auto;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  text-decoration: underline solid 0.5rem var(--blue);
+}
+
+.container img {
+  width: 75%;
+  margin: auto;
+  padding: 5rem 0 5rem 0;
+}
+
+.container p {
+  line-height: 1.6em;
+  margin-bottom: 2rem;
+}
+
 #contact {
-  background-color: rgb(137, 221, 247);
+  background-color: #899593;
+  padding: 2rem;
 }
 
-h1,
-.para1 {
-  text-align: center;
-  margin: 25px 50px 25px 60px;
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#contact .contact-border {
+  border: solid 0.7rem var(--pie);
+  padding: 2rem;
+  border-radius: 45px;
 }
 
-.contact-container {
-  background-color: turquoise;
-  text-align: center;
-}
-
-h2 {
-  margin: 25px 0 25px 0;
-  padding-top: 50px;
-}
-
-#contacts {
-  margin: 100px 0 25px 0;
-  padding-bottom: 25px;
-}
-
-form {
-  border: tomato 5px solid;
-  display: inline;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-#submit {
-  border-radius: 35px;
-  padding: 5px;
-  font-weight: bolder;
+label {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-  text-align: center;
-  color: green;
   background-color: black;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
 }
